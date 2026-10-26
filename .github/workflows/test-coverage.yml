@@ -14,7 +14,7 @@ permissions:
 jobs:
   test:
     name: Run Tests and Generate Coverage
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64]
 
     steps:
     - name: Checkout code
@@ -118,7 +118,7 @@ jobs:
 
   lint:
     name: Run Linters
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64]
 
     steps:
     - name: Checkout code
